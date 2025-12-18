@@ -1,0 +1,47 @@
+name: flutter_base_project
+description: "A new Flutter project."
+publish_to: 'none'
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.7.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  flutter_riverpod: ^2.6.1
+  go_router: ^15.1.2
+  dio: ^5.9.0
+  logger: ^2.6.2
+  dartx: ^1.2.0
+  supabase_flutter: ^2.12.0
+  firebase_core: ^4.3.0
+  cloud_firestore: ^6.1.1
+  json_annotation: ^4.9.0
+  freezed_annotation: ^3.1.0
+  cupertino_icons: ^1.0.6
+  flutter_riverpod: ^2.6.1
+  go_router: ^15.1.2
+  dio: ^5.9.0
+  logger: ^2.6.2
+  dartx: ^1.2.0
+  supabase_flutter: ^2.12.0
+  firebase_core: ^4.3.0
+  cloud_firestore: ^6.1.1
+  json_annotation: ^4.9.0
+  freezed_annotation: ^3.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner:
+  json_serializable:
+  freezed:
+  very_good_analysis: ^5.1.0
+
+flutter:
+  uses-material-design: true

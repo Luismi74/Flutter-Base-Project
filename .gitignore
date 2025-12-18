@@ -25,3 +25,8 @@ doc/api/
 
 .flutter-plugins
 .flutter-plugins-dependencies
+
+# IDE and FVM
+.fvm/
+.vscode/
+.fvmrc

@@ -1,0 +1,33 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_base_project/core/router/app_router.dart';
+import 'package:flutter_base_project/core/theme/app_theme.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+// import 'package:flutter_web_plugins/url_strategy.dart'; // Uncomment if web support is needed
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  // usePathUrlStrategy(); // Uncomment for cleaner web URLs
+
+  runApp(
+    const ProviderScope(
+      child: MyApp(),
+    ),
+  );
+}
+
+class MyApp extends ConsumerWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final router = ref.watch(goRouterProvider);
+
+    return MaterialApp.router(
+      title: 'Flutter Base Project',
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      routerConfig: router,
+      debugShowCheckedModeBanner: false,
+    );
+  }
+}
